@@ -24,8 +24,7 @@ public class Score {
 			score[3]+=score[i];
 		}
 		
-		배열[0]= 1;
-		//평균 계산
+
 		avg=score[3]/3;
 		//출력
 		System.out.print(name+",");
