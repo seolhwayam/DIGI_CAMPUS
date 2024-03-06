@@ -21,7 +21,6 @@ public class CalculatorMethod {
 	
 	
 	public static void output(String operator,int num1, int num2) { //연산자 구분해서 출력하기
-		int result=0;
 		switch(operator) {
 			case "+" :
 				System.out.println(num1+operator+num2+"="+(CalculatorMethod.puls(num1,num2)));
