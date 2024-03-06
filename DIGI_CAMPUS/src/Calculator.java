@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class A_calculator {
+public class Calculator {
 	public static void main(String[] args) {
 	String answer; //사용자 계산기 지속여부 질의 변수
 	do{
