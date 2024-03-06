@@ -27,7 +27,8 @@ public class CalculatorMethod {
 		return operator;
 	}
 	
-	public static void output(String operator,int num1, int num2) {
+	
+	public static void output(String operator,int num1, int num2) { //연산자 구분해서 출력하기
 		switch(operator) {
 			case "+" :
 				System.out.println(num1+operator+num2+"="+(CalculatorMethod.puls(num1,num2)));
@@ -47,7 +48,7 @@ public class CalculatorMethod {
 	}
 	
 	public static int puls(int num1, int num2) { // 더하기 연산 함수
-		return num1*num2;
+		return num1+num2;
 	}
 	public static int minus(int num1, int num2) { // 빼기 연산 함수
 		return num1-num2;
