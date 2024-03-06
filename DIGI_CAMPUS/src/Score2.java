@@ -16,12 +16,10 @@ public class Score2 {
 				score[i][j] = sc.nextInt();
 				score[i][3]+= score[i][j]; //총점계산
 			}
+			avg[i] = score[i][3]/3.f; //평균구하기
 		}
 		
-		for(int k=0; k<avg.length; k++) {
-			avg[k] = score[k][3]/3.f; //평균 계산
-		}
-		
+
 		//출력하기
 		int n=0;
 		while(n<3) {
