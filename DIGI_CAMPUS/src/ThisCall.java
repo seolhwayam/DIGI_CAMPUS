@@ -3,11 +3,19 @@ public class ThisCall {
 	int a;
 	int b;
 	
+	
+	//this() 호출 : 유지보수 좋음!!
+	
 	public ThisCall() {
+		//this.a = 0;
+		//this.b = 0;
+		this(0,0);
 		
 	}
 	public ThisCall(int a) {
-		this.a = a;
+		//this.a = a;
+		//this.b = 0;
+		this(a,0);
 	}
 	
 	public ThisCall(int a,int b) {
