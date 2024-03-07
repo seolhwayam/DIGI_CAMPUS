@@ -91,6 +91,8 @@ public class Calc3 {
 		}while(answer.equals("y")||answer.equals("Y"));
 		System.out.println("계산기가 종료되었습니다.");
 		
+		
+		
 	
 	}
 
