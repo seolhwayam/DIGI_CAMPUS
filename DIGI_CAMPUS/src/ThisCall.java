@@ -4,7 +4,7 @@ public class ThisCall {
 	int b;
 	
 	
-	//this() 호출 : 유지보수 좋음!!
+	//this() 호출 : 유지보수 좋음
 	
 	public ThisCall() {
 		//this.a = 0;
