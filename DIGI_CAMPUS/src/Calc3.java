@@ -79,13 +79,24 @@ public class Calc3 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		String answer;
 		
-		int num = sc.nextInt();
-		char ch = sc.next().charAt(0);
-		int num2 = sc.nextInt();
+		Calc3 calc = new Calc3();
 		
-		Calc3 calc = new Calc3(num,ch,num2);
-		calc.select();
+		do {
+			System.out.println("숫자를 입력해주세요 : ");
+			calc.setNum1(sc.nextInt());
+			System.out.println("연산자를 입력해주세요 : ");
+			calc.setCh(sc.next().charAt(0));
+			System.out.println("숫자를 입력해주세요 : ");
+			calc.setNum2(sc.nextInt());
+			
+			calc.select();
+			System.out.println("계산기를 계속 이용하겠습니까?(y/Y) : ");
+			answer = sc.next();
+		}while(answer.equals("y")||answer.equals("Y"));
+		System.out.println("계산기가 종료되었습니다.");
+		
 	
 	}
 
