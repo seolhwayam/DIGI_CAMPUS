@@ -20,6 +20,10 @@ public class ClassExam02 {
 	public int getA() {
 		return a;
 	}
+	
+	
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
