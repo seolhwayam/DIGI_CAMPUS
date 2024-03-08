@@ -1,51 +1,108 @@
-class A{
-	private int a;
+class AA{
+	private int aa;
 	
-	public A(){
+	public AA(){
 		
 	}
 
 	public int getA() {
-		return a;
+		return aa;
 	}
 
 	public void setA(int a) {
-		this.a = a;
+		this.aa = aa;
+	}
+	
+}
+class BB{
+	private int aa;
+	
+	public BB(){
+		
+	}
+
+	public int getA() {
+		return aa;
+	}
+
+	public void setA(int aa) {
+		this.aa = aa;
+	}
+	
+}
+class CC{
+	private int aa;
+	
+	public CC(){
+		
+	}
+
+	public int getA() {
+		return aa;
+	}
+
+	public void setA(int aa) {
+		this.aa = aa;
 	}
 	
 }
 
 
 public class HasA2 {
-	private String name;
-	private A age;
+	//객체주입
+	private AA aa;
+	private BB bb;
+	private CC cc;
+	
 	
 
-	public void setName(String name) {
-		this.name = name;
+	public AA getAA() {
+		return aa;
 	}
-	
-	public void setAge(A age) {
-		this.age=age; 
+
+
+
+	public void setAA(AA aa) {
+		this.aa = aa;
 	}
-	
-	public String getName() {
-		return name;
+
+
+
+	public BB getBB() {
+		return bb;
 	}
-	
-	public int getAge() {
-		return this.age.getA();
+
+
+
+	public void setBB(BB bb) {
+		this.bb = bb;
 	}
+
+
+
+	public CC getCC() {
+		return cc;
+	}
+
+
+
+	public void setCC(CC cc) {
+		this.cc = cc;
+	}
+
 
 
 	public static void main(String[] args) {
-		//한페이지에 클래스 만들 시에 public은 하나만 가능
-		HasA has = new HasA();
-		has.setName("김설화");
-		has.setAge(25);
+		HasA2 has = new HasA2();
+		AA a = new AA();
+		BB B = new BB();
+		CC C = new CC();
 		
-		System.out.println(has.getName());
-		System.out.println(has.getAge());
+		a.setA(5);
+		has.setAA(a);
+		
+		System.out.println(has.getAA());
+		
 		
 	}
 
