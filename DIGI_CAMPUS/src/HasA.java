@@ -2,7 +2,7 @@ class A{
 	private int a;
 	
 	public A(){
-		
+		System.out.println("A 입니다.");
 	}
 
 	public int getA() {
@@ -21,6 +21,7 @@ public class HasA {
 	private A age;
 	
 	public HasA() {
+		System.out.println("HasA 입니다.");
 		name ="";
 		age = new A();
 	}
