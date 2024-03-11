@@ -10,6 +10,8 @@ public class EmployeeData {
 		EmployeeNumber[num] = employeeNumber;
 		num++;
 	}
+	
+	
 	public void information() {
 		for(int i=0; i<10; i++) {
 			if(EmployeeData[i]==null) {
