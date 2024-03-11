@@ -1,9 +1,13 @@
 //성적처리 클래스
 public class StudentScoreHasA {
+	private static final boolean True = false;
 	//이름 -> name
 	//과목 -> subject
 	//총점, 평균
-	private Name name;
+
+import java.util.Scanner;
+
+private Name name;
 	private Subject kor;
 	private Subject eng;
 	private Subject math;
@@ -61,6 +65,11 @@ public class StudentScoreHasA {
 	}
 
 	public static void main(String[] args) {
+		
+		
+		
+		
+		
 		StudentScoreHasA stu = new StudentScoreHasA();
 		stu.setName("superman");
 		stu.setKor(90);
