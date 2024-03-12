@@ -39,10 +39,11 @@ public class DynamicBinding {
       
       halbe = abe; //동적바인딩
       halbe.disp();
+
       
       halbe= me; // 동적바인딩
       halbe.disp();
       
-      halbe.dispMe();
+
    }
 }
