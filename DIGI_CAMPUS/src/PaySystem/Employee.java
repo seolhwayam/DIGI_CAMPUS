@@ -20,7 +20,6 @@ public class Employee {
 		this.workYear = workYear;
 		this.contractWoker = contractWoker;
 		this.adminYN = adminYN;
-		
 	}
 
 
@@ -69,10 +68,7 @@ public class Employee {
 		return workYear;
 	}
 
-	public String isAdminYN() {
-		return adminYN;
-	}
-	
+
 	public String getAdminYN() {
 		return adminYN;
 	}
@@ -80,6 +76,10 @@ public class Employee {
 	public void setAdminYN(String adminYN) {
 		this.adminYN = adminYN;
 	}
+	
+	
+	
+	
 	
 	//시간외 근무시간 변경하기
 	public void changeOvertimePay() {

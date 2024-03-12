@@ -9,7 +9,6 @@ public class PaySearch {
 	private int total;
 	private String rank;
 	private String contractWoker;
-	private Pay pay = new Pay();
 	
 	public PaySearch(String rank ,int workYear, int overtime,String contractWoker) {
 		this.rankPay = Pay.getRankPay();
