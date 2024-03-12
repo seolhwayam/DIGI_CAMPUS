@@ -1,4 +1,6 @@
 //데이터 클래스
+package Day5;
+
 public class Name {
 	private String name;
 	

@@ -1,6 +1,8 @@
 
 import java.util.*;
 
+import Day5.StudentScoreHasA;
+
 public class AllStudent {
 	Scanner sc= new Scanner(System.in);
 	static StudentScoreHasA []stu = new StudentScoreHasA[100];

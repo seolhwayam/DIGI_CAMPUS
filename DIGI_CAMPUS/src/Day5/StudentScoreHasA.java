@@ -1,4 +1,6 @@
 //성적처리 클래스
+package Day5;
+
 import java.util.Scanner;
 public class StudentScoreHasA {
 	//이름 -> name

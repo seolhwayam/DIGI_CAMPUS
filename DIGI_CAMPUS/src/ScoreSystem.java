@@ -1,6 +1,8 @@
 
 import java.util.*;
 
+import Day5.StudentScoreHasA;
+
 public class ScoreSystem {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
