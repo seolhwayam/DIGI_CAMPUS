@@ -30,7 +30,7 @@ abstract class Memory {
 	
 }
 
-class MyStack extends Memory{
+class MyStack extends Memory{//스택
 	int[] number = super.getNumber();
 	@Override
 	public int pop() {
@@ -42,7 +42,7 @@ class MyStack extends Memory{
 	}
 }
 
-class MyQueue extends Memory{
+class MyQueue extends Memory{ //큐
 	int[] number = super.getNumber();
 	@Override
 	public int pop() {
