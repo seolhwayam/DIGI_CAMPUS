@@ -6,11 +6,15 @@ abstract class Memory {
 	private int num = -1;
 	
 	public void push(int a) {
-		num++;
-		number[num] = a;
+		if(num>=4) {
+			System.out.println("꽉 찼습니다. 더 이상 넣을 수 없습니다.");
+		}else {
+			num++;
+			number[num] = a;
+		}
 	};
 
-	public abstract int pop();
+	public abstract void pop();
 
 	public int[] getNumber() {
 		return number;
@@ -33,25 +37,35 @@ abstract class Memory {
 class MyStack extends Memory{//스택
 	int[] number = super.getNumber();
 	@Override
-	public int pop() {
+	public void pop() {
 		// TODO Auto-generated method stub
-		int a = number[super.getNum()];
-		number[super.getNum()] = 0;
-		super.setNum(); //num--;
-		return a;
+		if(super.getNum()<0) {
+			System.out.println("배열에 들어있는 것이 없습니다. ");
+		}else {
+			System.out.println(number[super.getNum()]);
+			number[super.getNum()] = 0;
+			super.setNum(); //num--;
+		}
+		
 	}
 }
 
 class MyQueue extends Memory{ //큐
 	int[] number = super.getNumber();
+	int frount =0;
 	@Override
-	public int pop() {
+	public void pop() {
 		// TODO Auto-generated method stub
-		int a = number[0];
+		if(super.getNum()<0) {
+			System.out.println("배열에 들어있는 것이 없습니다. ");
+		}else{
+		System.out.println(number[0]);
 		for (int i=0; i<4 ; i++) {
 			number[i] = number[i+1] ;
 		}
-		return a;
-	}
+		number[4]=0;
+		super.setNum();
+		}
 	
+	}
 }

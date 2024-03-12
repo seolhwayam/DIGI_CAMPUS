@@ -7,45 +7,31 @@ public class Test {
 		Scanner sc = new Scanner(System.in);
 		MyQueue mq = new MyQueue();
 		MyStack ms = new MyStack();
+		Memory m;
 		boolean a = true;
 		System.out.println("어떤 메모리를 선택하겠습니까? (1. stack 2.queue)");
 		if(sc.nextInt()==1) {
-			while(a==true) {
-				System.out.println("stack 메뉴 (1. push 2.pop 3.종료)");
-				switch(sc.nextInt()) {
-					case 1:
-						System.out.println("push할 숫자를 입력해주세요 : ");
-						ms.push(sc.nextInt());
-						break;
-					case 2:
-						System.out.println(ms.pop());
-						break;
-					case 3:
-						System.out.println("메모리 프로그램 종료합니다.");
-						a=false;
-						break;
-				}
-			}
-
+			m = ms;
 		}else{
-			while(a==true) {
-				System.out.println("queue 메뉴 (1. push 2.pop 3.종료)");
-				switch(sc.nextInt()) {
-					case 1:
-						System.out.println("push할 숫자를 입력해주세요 : ");
-						mq.push(sc.nextInt());
-						break;
-					case 2:
-						System.out.println(mq.pop());
-						break;
-					case 3:
-						System.out.println("메모리 프로그램 종료합니다.");
-						a=false;
-						break;
-				}
-			}
-			
+			m = mq;
 		}
+		while(a==true) {
+			System.out.println("1. push 2.pop 3.종료");
+			switch(sc.nextInt()) {
+				case 1:
+					System.out.println("push할 숫자를 입력해주세요 : ");
+					m.push(sc.nextInt());
+					break;
+				case 2:
+					m.pop();
+					break;
+				case 3:
+					System.out.println("메모리 프로그램 종료합니다.");
+					a=false;
+					break;
+			}
+		}
+		
 
 		
 	}
