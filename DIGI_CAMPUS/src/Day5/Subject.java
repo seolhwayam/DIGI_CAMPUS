@@ -1,3 +1,4 @@
+package Day5;
 
 public class Subject {
 	private int Score;

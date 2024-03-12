@@ -1,3 +1,4 @@
+package Day5;
 class AA{
 	private int aa;
 	
