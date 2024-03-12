@@ -1,3 +1,4 @@
+package Day2;
 public class StringExam {
    public static void main(String[] args) {
       String str1 = new String("Superman");
