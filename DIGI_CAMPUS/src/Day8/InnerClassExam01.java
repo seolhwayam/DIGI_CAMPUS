@@ -7,7 +7,7 @@ package Day8;
  * 1. member inner class ★ : outerclass 안에 innerclass 사용시
  * 2. static inner class : inner class 앞에 static 붙이기(outer클래스 중에 static만 쓰고 싶을 때!!)
  * 3. local inner class : outer class메소드 안에 클래스
- * 4. anonymous inner class(익명) ★  : 
+ * 4. anonymous inner class(익명) ★  : 익명 클래스 생성
  * 
  * 
  * outer class
