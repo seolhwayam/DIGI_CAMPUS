@@ -1,3 +1,4 @@
+package Day6;
 
 public class ClassExam01 {
 	/*[구성요소]
