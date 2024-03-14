@@ -80,10 +80,10 @@ public class AllStudent3 {
 	    } else if (select == 2) {
 	        System.out.println("조회할 평균 점수를 입력해주세요(입력한 평균의 이상만 조회합니다) : ");
 	        float avg = sc.nextFloat();
-	        StudentScoreHasA aa = iter.next();
 	        while(iter.hasNext()) {//값이 있으면 true 없으면 false
-				if(aa != null && aa.getAvg() >= avg) {
-					printAllStudent(aa);
+		        StudentScoreHasA bb = iter.next();
+				if(aa.getAvg() >= avg) {
+					printAllStudent(bb);
 				}
 	    	}
 	     }
@@ -110,6 +110,7 @@ public class AllStudent3 {
 			System.out.println("총 점수 : "+i.getTotal());
 		    System.out.println("평균 점수 : "+i.getAvg());
 	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String name;
