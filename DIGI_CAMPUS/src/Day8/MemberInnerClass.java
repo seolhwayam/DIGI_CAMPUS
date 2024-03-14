@@ -66,9 +66,6 @@ class AnonymousInnerClass2{ //익명 inner class
 	
 }
 
-	
-
-
 public class MemberInnerClass  { //맴버 inner class
 	private int a=30;
 	
