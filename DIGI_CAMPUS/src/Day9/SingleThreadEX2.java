@@ -16,11 +16,10 @@ package Day9;
  * 
  * 스레드의 생성방법
  * 1. Thread 클래스를 상속받는 방법 (extends Thread)
- * - super이용하여서 Thread 사용
- * 
- * 
  * 2. Runnable 인터페이스 구현하는 방법 (implements Runnable)
  * 
+ * 동기화
+ * - 임계영역이란 멀티스레드에 의해 공유자원
  * 
  * 
  * */
