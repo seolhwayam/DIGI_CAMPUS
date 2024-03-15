@@ -98,12 +98,11 @@ public class AllStudent4 {
 			System.out.println("수학 점수 : "+ stu.get(i).getMath());
 			System.out.println("영어 점수 : "+ stu.get(i).getEng());
 			System.out.println("총 점수 : "+stu.get(i).getTotal());
-		    System.out.println("평균 점수 : "+ stu.get(i).getAvg());
+			System.out.println("평균 점수 : "+ stu.get(i).getAvg());
 	}
 
 
 		
-
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
