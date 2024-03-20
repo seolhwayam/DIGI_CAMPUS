@@ -8,7 +8,7 @@ public class Games {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		BaseBallGame2 game1 = new BaseBallGame2();
-		MinNumber game2 = new MinNumber();
+		SmallNumber game2 = new SmallNumber();
 		CleanNumber game3 = new CleanNumber();
 		BabyGin game4 = new BabyGin();
 		boolean stop = true;
