@@ -32,7 +32,6 @@ public class Factorial2 {
 			}else {
 				System.out.print(i+"=");
 			}
-			
 		}
 		System.out.println(f.factorial(num));
 
