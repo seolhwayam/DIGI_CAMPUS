@@ -4,22 +4,22 @@ import java.util.Random;
 
 public class InsetSort {
 	public static void main(String[] args) {
-//		int data[] = new int[1000];
-//		Random random = new Random();
-//		
-//		for(int i=0; i<1000; i++) {
-//			data[i] = random.nextInt(1000);
-//		}
-		int data[] = {1,2,5,4};
+		int data[] = new int[50];
+		Random random = new Random();
+		
+		for(int i=0; i<50; i++) {
+			data[i] = random.nextInt(50);
+		}
+//		int data[] = {1,2,5,4};
 		
 		insertionSort(data);
 		
-//		for(int i=0; i<=998; i++) {
-//			if(data[i]>data[i+1]) {
-//				System.out.println("Error");
-//			}
-//			System.out.println(data[i]);
-//		}
+		for(int i=0; i<=48; i++) {
+			if(data[i]>data[i+1]) {
+				System.out.println("Error");
+			}
+			System.out.println(data[i]);
+		}
 		for(int a:data) {
 			System.out.print(a+" ");
 		}
