@@ -50,7 +50,6 @@ public class Queue {
 	    	int a = front;
 	    	int b = front;
 	    	for(int i=0; i<a-1; i++ ) {
-	    		System.out.println(i);
 	    		queue[i] = queue[b+i];
 	    		queue[b+i] =0;
 	    		front--;
@@ -66,6 +65,7 @@ public class Queue {
     		end--;
 	    }
 	}
+	
 
 	
 	public static void main(String[] args) {
