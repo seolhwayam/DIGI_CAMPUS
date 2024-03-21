@@ -16,38 +16,33 @@ public class PostPositionOperator {
 		
 	}
 	
-	
+	public int getSize() {
+		return arr.size();
+	}
+
 	
 	public static void main(String[] args) {
 		PostPositionOperator p = new PostPositionOperator();
+		ArrayList<Integer> number = new ArrayList<Integer>();
 		//113+11-(32-(9-2+6))
 		//11311+32926+-
-		System.out.print(113+" ");
-		p.push('+');
-		System.out.print(11+" ");
-		p.push('-');
-		p.push('(');
-		System.out.print(9+" ");
-		p.push('-');
-		System.out.print(2+" ");
-		p.push('+');
-		System.out.print(6+" ");
-		p.push(')');
-		p.pop();
-		System.out.print(" ");
-		p.pop();
-		System.out.print(" ");
-		p.pop();
-		System.out.print(" ");
-		p.pop();
-		System.out.print(" ");
-		p.pop();
-		System.out.print(" ");
-		p.pop();
-		System.out.print(" ");
-		p.push(')');
-		System.out.print(" ");
-		p.pop();
+		String test = "113+11-(32-(9-2+6))";
+		String num;
+		for(int i=0; i<test.length(); i++) {
+
+			if(test.charAt(i)=='+'||test.charAt(i)=='-'){
+				
+			}
+			if(test.charAt(i)=='('||test.charAt(i)==')') {
+				if(test.charAt(i)=='(') {
+					p.push('(');
+				}else {
+					for(int k=0; k<p.getSize(); k++) {
+						
+					}
+				}
+			}
+		}
 		
 		
 		
