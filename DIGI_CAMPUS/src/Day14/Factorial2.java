@@ -24,7 +24,17 @@ public class Factorial2 {
 		System.out.println("팩토리얼 수를 입력해주세요 : ");
 		Scanner sc = new Scanner(System.in);
 		Factorial2 f = new Factorial2();
-		System.out.println("팩토리얼 결과 : "+f.factorial(sc.nextInt()));
+		int num = sc.nextInt();
+		int check = num;
+		for(int i=check; i>0; i--) {
+			if(i!=1) {
+				System.out.print(i+"*");
+			}else {
+				System.out.print(i+"=");
+			}
+			
+		}
+		System.out.println(f.factorial(num));
 
 	}
 
