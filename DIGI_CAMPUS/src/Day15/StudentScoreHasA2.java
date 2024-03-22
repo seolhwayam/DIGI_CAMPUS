@@ -1,8 +1,11 @@
 //성적처리 클래스
-package Day5;
+package Day15;
 
 import java.util.Scanner;
-public class StudentScoreHasA {
+
+import Day5.Name;
+import Day5.Subject;
+public class StudentScoreHasA2 {
 	//이름 -> name
 	//과목 -> subject
 	//총점, 평균
@@ -11,12 +14,12 @@ public class StudentScoreHasA {
 		private Subject kor;
 		private Subject eng;
 		private Subject math;
-	
+		StudentScoreHasA2 next;
 	
 		private int total=0;
 		private float avg=0;
 		
-		public StudentScoreHasA() {
+		public StudentScoreHasA2() {
 			name = new Name();
 			kor = new Subject();
 			eng = new Subject();
@@ -36,6 +39,7 @@ public class StudentScoreHasA {
 		}
 	
 		public void setKor(int kor) {
+			getTotal();
 			this.kor.setScore(kor);
 		}
 	
@@ -44,6 +48,7 @@ public class StudentScoreHasA {
 		}
 	
 		public void setMath(int math) {
+			getTotal();
 			this.math.setScore(math);
 		}
 	
@@ -53,6 +58,7 @@ public class StudentScoreHasA {
 		}
 	
 		public void setEng(int math) {
+			getTotal();
 			this.eng.setScore(math);
 		}
 	
