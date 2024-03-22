@@ -8,15 +8,12 @@ public class Factorial2 {
 	
 	public int factorial(int a) {
 		n=a;
-		while(true) {
-			if(n==0) {
-				break;
-			}
-			num*=n;
-			n--;
-			factorial(n);
+		if(n==0) {
+			return num;
 		}
-		return num;
+		num*=n;
+		n--;
+		return factorial(n);
 	}
 	
 	
